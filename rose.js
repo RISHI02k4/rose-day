@@ -1,11 +1,9 @@
 const mainBox = document.getElementById("mainBox");
 
-/* 🎵 Play Music (Mobile Safe) */
+/* 🎵 Music */
 function playMusic(){
     const music = document.getElementById("bgMusic");
-    music.play().catch(() => {
-        console.log("User interaction required");
-    });
+    music.play().catch(()=>{});
 }
 
 function startExperience(){
