@@ -31,7 +31,7 @@ h2{
 p{
     font-size:14px;
     margin-bottom:12px;
-    line-height:1.5;
+    line-height:1.6;
 }
 
 button{
@@ -79,6 +79,7 @@ button:hover{
     left:20px;
 }
 
+/* Boy gives rose */
 .moveRose{
     animation:giveRose 2s forwards ease-in-out;
 }
@@ -88,6 +89,7 @@ button:hover{
     100%{left:75%;}
 }
 
+/* Girl gives rose back */
 .returnRose{
     animation:returnRose 2s forwards ease-in-out;
 }
