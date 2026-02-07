@@ -1,16 +1,29 @@
 const mainBox = document.getElementById("mainBox");
 
+/* 🎵 Music */
+function playMusic(){
+    const player = document.getElementById("ytplayer");
+    player.src = "https://www.youtube.com/embed/JpGba8mRr4Q?autoplay=1&loop=1&playlist=JpGba8mRr4Q";
+}
+
+function startExperience(){
+    playMusic();
+    askAccept();
+}
+
+/* 💌 Intro */
 function intro(){
     mainBox.innerHTML = `
         <h2>Hello Kriti 💌</h2>
         <p>My name is <b>Miss Dopamin</b>.</p>
-        <p>I was specially created by Rishi to carry a message for you this Rose Day 🌹</p>
+        <p>I was created by Rishi to deliver something special to you today.</p>
         <p>He may not be standing in front of you right now…</p>
-        <p>But his feelings are.</p>
-        <button onclick="askAccept()">Continue</button>
+        <p>But his intentions are.</p>
+        <button onclick="startExperience()">Continue</button>
     `;
 }
 
+/* 🌹 Accept Question */
 function askAccept(){
     mainBox.innerHTML = `
         <h2>Kriti ❤️</h2>
@@ -19,22 +32,24 @@ function askAccept(){
     `;
 }
 
+/* 💖 Emotional Note */
 function showNote(){
     mainBox.innerHTML = `
         <h2>A Note From Rishi</h2>
         <p>Hi Kriti,</p>
-        <p>I know it’s been a long time since we saw each other.</p>
-        <p>Maybe life created distance… maybe silence did.</p>
+        <p>I know it's been a long time since we truly spoke.</p>
+        <p>Maybe distance happened. Maybe silence happened.</p>
         <p>I don’t know what changed between us.</p>
-        <p>But today, on Rose Day, I didn’t want the silence to win.</p>
-        <p>I had imagined giving you a rose in person — seeing your reaction, your smile.</p>
+        <p>But today, I didn’t want another special day to pass without telling you something.</p>
+        <p>I had imagined giving you a rose in person — seeing your smile.</p>
         <p>But since you’re not here, I’m sending it in the only way I can.</p>
-        <p>This is the first time I’m giving a rose to someone who truly matters to me.</p>
-        <p>Happy Rose Day to the only girl in this universe I genuinely admire. 🌹</p>
+        <p>This is the first time I’m giving a rose to someone who genuinely matters to me.</p>
+        <p>Happy Rose Day to the only girl in this universe I truly admire. 🌹</p>
         <button onclick="giveRose()">Do you accept this rose?</button>
     `;
 }
 
+/* 🌹 Boy gives rose */
 function giveRose(){
     mainBox.innerHTML = `
         <div class="scene">
@@ -47,6 +62,7 @@ function giveRose(){
     `;
 }
 
+/* 🌹 Girl returns rose */
 function returnRose(){
     mainBox.innerHTML = `
         <div class="scene">
@@ -59,6 +75,7 @@ function returnRose(){
     `;
 }
 
+/* 💕 Grateful */
 function grateful(){
     mainBox.innerHTML = `
         <h2>Rishi is grateful to have you 💖</h2>
@@ -67,6 +84,7 @@ function grateful(){
     `;
 }
 
+/* ☎️ Final */
 function final(){
     mainBox.innerHTML = `
         <h2>Then call him ☎️</h2>
